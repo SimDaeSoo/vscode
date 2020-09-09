@@ -44,7 +44,7 @@ function code() {
 	export VSCODE_LOGS=
 
 	# Launch Code
-	exec "$CODE" . --no-sandbox "$@"
+	exec "$CODE" . --no-sandbox --disable-dev-shm-usage --trace-uncaught "$@"
 }
 
 function code-wsl()
